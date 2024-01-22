@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+
+.top-sectionNavbar {
+    width: 100%;
+    margin: auto;
+    background: #ff7171;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.top-sectionNavbar>img {
+    display: none;
+}
+
+.top-sectionNavbar>ul {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+    justify-content: space-evenly;
+
+}
+
+.top-sectionNavbar>ul>li {
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.top-sectionNavbar>ul>img {
+    height: 25px;
+    width: 25px;
+}
+
+section {
+    display: flex;
+    height: 600px;
+}
+
+section>.top-sectionContainer {
+    width: 50%;
+    background-image: linear-gradient(to right, #fff5af, #ffd3d1);
+    padding: 100px 50px 50px 50px;
+}
+
+section>img {
+    width: 50%;
+    object-fit: cover;
+}
+
+section>.top-sectionContainer>h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+section>.top-sectionContainer>p {
+    color: #1d1d1c;
+    font-size: 20px;
+    padding-top: 30px;
+    line-height: 25px;
+}
+
+section>.top-sectionContainer>button {
+    background-color: #ff7171;
+    height: 40px;
+    width: 130px;
+    border-width: 0;
+    color: #fff;
+    margin-top: 30px;
+}
+
+article {
+    margin-top: 10px;
+    height: 600px;
+    background-image: linear-gradient(to right, #fff5af, #ffb7eb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.Bottom-grid-Container {
+    display: flex;
+    gap: 10px;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+article>.Bottom-grid-Container>img {
+    width: 250px;
+    object-fit: cover;
+}
+
+.Bottom-grid-Container>.imageContainer>img {
+    height: 200px;
+    width: 200px;
+}
+
+.BottomSection-rightContainer {
+    height: 150px;
+    width: 350px;
+    background-color: #ff7171;
+    padding: 20px;
+}
+
+.BottomSection-rightContainer>h1 {
+    width: 218px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.BottomSection-rightContainer>p {
+    display: flex;
+    align-items: center;
+}
+
+.arrowImage {
+    height: 22px;
+    width: 24px;
+}
+
+@media screen and (max-width:1024px) {
+    section {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .top-sectionNavbar>img {
+        display: block;
+        height: 25px;
+        width: 25px;
+        margin-left: auto;
+        padding-right: 15px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    section>.top-sectionContainer {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    section>.top-sectionContainer>h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    section>.top-sectionContainer>p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    section>.top-sectionContainer>button {
+        display: block;
+        margin: auto;
+    }
+
+    section>img {
+        width: 100%;
+    }
+
+    .top-sectionNavbar>ul {
+        display: none;
+    }
+
+    article {
+        height: auto;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .Bottom-grid-Container {
+        flex-direction: column;
+    }
+
+    article>.Bottom-grid-Container>img {
+        width: 100vw;
+
+    }
+
+    .Bottom-grid-Container>.imageContainer>img {
+        width: 100vw;
+        height: 325px;
+    }
+
+    .BottomSection-rightContainer {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .BottomSection-rightContainer>h1 {
+        padding-left: 10px;
+
+    }
+
+    .BottomSection-rightContainer>p {
+        padding-left: 10px;
+    }
+}
